@@ -7,10 +7,10 @@ const fs = require('fs');
 // ******************************************************** //
 //          This part need to modified accordingly          //
 const jars = [
-    // {
-    //     jarName: 'org.wso2.carbon.apimgt.publisher.feature-6.7.206',
-    //     appContext: 'publisher',
-    // },
+    {
+        jarName: 'org.wso2.carbon.apimgt.publisher.feature-6.7.206',
+        appContext: 'publisher',
+    },
     {
         jarName: 'org.wso2.carbon.apimgt.store.feature-6.7.206',
         appContext: 'devportal',
@@ -23,7 +23,7 @@ const jars = [
 
 
 const productName = 'wso2am-3.2.0';
-const artifactFolderName = '1135';
+const artifactFolderName = '1354';
 
 const wikeOrWikeson = 'wilkinson'; // Set this also accordingly ( for 3.0 we need to set this to 'wilkes' )
 // ******************************************************** //
@@ -31,7 +31,7 @@ const wikeOrWikeson = 'wilkinson'; // Set this also accordingly ( for 3.0 we nee
 // ******************************************************** //
 
 let adminAppHasChanges = false;
-let publisherAppHasChanges = false;
+let publisherAppHasChanges = true;
 
 const fileExistsInPack = (appName, fileNameInJar) => {
     //joining path of directory 
